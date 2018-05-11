@@ -17,7 +17,9 @@ function getDogs() {
 document.getElementById("add-dog").onclick = function () {
     dogs.push(document.getElementById("dog").value)
     document.getElementById("list").innerHTML = ""
+    document.getElementById("dog").value = ""
     getDogs()
 }
+
 
 getDogs()
