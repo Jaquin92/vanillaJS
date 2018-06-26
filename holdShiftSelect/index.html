@@ -98,6 +98,21 @@
     </div>
 
     <script>
+
+        let checkboxes = document.querySelectorAll(".item");
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", (e) => {
+                if (e.target.checked) {
+                    checked = true
+                } else {
+                    checked = false;
+                };
+
+                console.log(checked, e)
+
+            })
+        })
+
     </script>
 </body>
 
